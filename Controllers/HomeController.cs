@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using ProjetoAspVendas.Models;
+using ProjetoAspVendas.Models.ViewModels;
 
 namespace ProjetoAspVendas.Controllers
 {
@@ -18,6 +18,7 @@ namespace ProjetoAspVendas.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
+            ViewData["email"] = "evertontp5@gmail.com";
 
             return View();
         }
