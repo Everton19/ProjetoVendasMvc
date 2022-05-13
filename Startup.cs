@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using ProjetoAspVendas.Models;
 
 namespace ProjetoAspVendas
 {
@@ -31,8 +33,10 @@ namespace ProjetoAspVendas
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<ProjetoAspVendasContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("ProjetoAspVendasContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

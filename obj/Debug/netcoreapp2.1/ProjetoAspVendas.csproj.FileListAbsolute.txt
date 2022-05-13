@@ -31,3 +31,7 @@ C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspV
 C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\ProjetoAspVendas.pdb
 C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\ProjetoAspVendas.csproj.CopyComplete
 C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Index.g.cshtml.cs
+C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Create.g.cshtml.cs
+C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Delete.g.cshtml.cs
+C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Details.g.cshtml.cs
+C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Edit.g.cshtml.cs
