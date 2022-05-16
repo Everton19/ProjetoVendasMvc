@@ -39,3 +39,4 @@ C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspV
 C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\ProjetoAspVendas.genruntimeconfig.cache
+C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\Razor\Views\Vendedores\Index.cshtml.g.cs
