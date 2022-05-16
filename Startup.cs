@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using ProjetoAspVendas.Models;
+using ProjetoAspVendas.Data;
 
 namespace ProjetoAspVendas
 {
@@ -38,14 +39,17 @@ namespace ProjetoAspVendas
             services.AddDbContext<ProjetoAspVendasContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("ProjetoAspVendasContext"), builder =>
                     builder.MigrationsAssembly("ProjetoAspVendas")));
+
+            services.AddScoped<SeedingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, SeedingService seedingService)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                seedingService.Seed();
             }
             else
             {

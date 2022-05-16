@@ -18,7 +18,7 @@ namespace ProjetoAspVendas.Models
         {
         }
 
-        public Vendedor(int id, string nome, string email, double salarioBase, DateTime dataNascimento, Departamento departamento)
+        public Vendedor(int id, string nome, string email, DateTime dataNascimento, double salarioBase, Departamento departamento)
         {
             Id = id;
             Nome = nome;
