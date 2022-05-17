@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using ProjetoAspVendas.Models;
 using ProjetoAspVendas.Services;
 
 namespace ProjetoAspVendas.Controllers
@@ -17,6 +18,19 @@ namespace ProjetoAspVendas.Controllers
         {
             var lista = _vendedoresService.FindAll();
             return View(lista);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Vendedor vendedor)
+        {
+            _vendedoresService.Insert(vendedor);
+            return RedirectToAction(nameof(Index));
         }
     }
 }

@@ -12,7 +12,7 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -1722971938,
+        "HashCode": 333000869,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -209,7 +209,7 @@
         }
       },
       {
-        "HashCode": 1396936041,
+        "HashCode": 1366474942,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.CacheTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -327,7 +327,7 @@
         }
       },
       {
-        "HashCode": -19064498,
+        "HashCode": 743650549,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.DistributedCacheTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -450,7 +450,7 @@
         }
       },
       {
-        "HashCode": -596051972,
+        "HashCode": 1663280588,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -496,7 +496,7 @@
         }
       },
       {
-        "HashCode": -1416790502,
+        "HashCode": -1910458455,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -913,7 +913,7 @@
         }
       },
       {
-        "HashCode": 702968817,
+        "HashCode": -1198509419,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1015,7 +1015,7 @@
         }
       },
       {
-        "HashCode": 167350767,
+        "HashCode": -210395623,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1061,7 +1061,7 @@
         }
       },
       {
-        "HashCode": -660295210,
+        "HashCode": -1098595305,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1131,7 +1131,7 @@
         }
       },
       {
-        "HashCode": -2005950278,
+        "HashCode": -1349531283,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1164,7 +1164,7 @@
         }
       },
       {
-        "HashCode": -1866805530,
+        "HashCode": -1419868817,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1351,7 +1351,7 @@
         }
       },
       {
-        "HashCode": 654770321,
+        "HashCode": 1505006135,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1379,7 +1379,7 @@
         }
       },
       {
-        "HashCode": 1677210431,
+        "HashCode": 2028513177,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1442,7 +1442,7 @@
         }
       },
       {
-        "HashCode": 993295635,
+        "HashCode": 73104018,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ScriptTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1586,7 +1586,7 @@
         }
       },
       {
-        "HashCode": 741590774,
+        "HashCode": 30813140,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1645,7 +1645,7 @@
         }
       },
       {
-        "HashCode": 1917086289,
+        "HashCode": 1937651877,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.TextAreaTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1687,7 +1687,7 @@
         }
       },
       {
-        "HashCode": -1054751136,
+        "HashCode": 1499232026,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1719,7 +1719,7 @@
         }
       },
       {
-        "HashCode": 874615951,
+        "HashCode": 1005116382,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1753,7 +1753,7 @@
         }
       },
       {
-        "HashCode": -1813661046,
+        "HashCode": -929604392,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.SpaServices.Prerendering.PrerenderTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.SpaServices",
@@ -1818,13 +1818,18 @@
   "RootNamespace": "ProjetoAspVendas",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Vendedores\\Index.cshtml",
+      "TargetPath": "Views\\Vendedores\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Departamentos\\Create.cshtml",
-      "TargetPath": "Views\\Departamentos\\Create.cshtml",
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -1838,43 +1843,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Departamentos\\Delete.cshtml",
       "TargetPath": "Views\\Departamentos\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Departamentos\\Details.cshtml",
-      "TargetPath": "Views\\Departamentos\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Shared\\_CookieConsentPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Vendedores\\Index.cshtml",
-      "TargetPath": "Views\\Vendedores\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Departamentos\\Index.cshtml",
-      "TargetPath": "Views\\Departamentos\\Index.cshtml",
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Vendedores\\Create.cshtml",
+      "TargetPath": "Views\\Vendedores\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -1888,13 +1868,38 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Home\\Contact.cshtml",
-      "TargetPath": "Views\\Home\\Contact.cshtml",
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Departamentos\\Details.cshtml",
+      "TargetPath": "Views\\Departamentos\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Departamentos\\Create.cshtml",
+      "TargetPath": "Views\\Departamentos\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Departamentos\\Index.cshtml",
+      "TargetPath": "Views\\Departamentos\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Home\\Contact.cshtml",
+      "TargetPath": "Views\\Home\\Contact.cshtml",
       "FileKind": "mvc"
     }
   ],
