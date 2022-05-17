@@ -12,6 +12,7 @@ namespace ProjetoAspVendas.Models
         public double SalarioBase { get; set; }
         public DateTime DataNascimento { get; set; }
         public Departamento Departamento { get; set; }
+        public int DepartamentoId { get; set; }
         public ICollection<RegistroVendas> Vendas { get; set; } = new List<RegistroVendas>();
 
         public Vendedor()
