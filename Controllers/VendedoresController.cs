@@ -8,18 +8,18 @@ namespace ProjetoAspVendas.Controllers
     public class VendedoresController : Controller
     {
 
-        private readonly VendedoresService _vendedoresService;
+        private readonly VendedoresService _vendedorService;
         private readonly DepartamentoService _departamentoService;
 
         public VendedoresController(VendedoresService vendedoresService, DepartamentoService departamentoService)
         {
-            _vendedoresService = vendedoresService;
+            _vendedorService = vendedoresService;
             _departamentoService = departamentoService;
         }
 
         public IActionResult Index()
         {
-            var lista = _vendedoresService.FindAll();
+            var lista = _vendedorService.FindAll();
             return View(lista);
         }
 
@@ -34,7 +34,30 @@ namespace ProjetoAspVendas.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Vendedor vendedor)
         {
-            _vendedoresService.Insert(vendedor);
+            _vendedorService.Insert(vendedor);
+            return RedirectToAction(nameof(Index));
+        }
+        public IActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var obj = _vendedorService.FindBybId(id.Value);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+
+            return View(obj);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(int id)
+        {
+            _vendedorService.Remove(id);
             return RedirectToAction(nameof(Index));
         }
     }
