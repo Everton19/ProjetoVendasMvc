@@ -1883,6 +1883,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Vendedores\\Details.cshtml",
+      "TargetPath": "Views\\Vendedores\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"

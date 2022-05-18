@@ -26,7 +26,7 @@ namespace ProjetoAspVendas.Controllers
         public IActionResult Create()
         {
             var departamentos = _departamentoService.FindAll();
-            var viewModel = new VendedorFormViewModel { Departamentos = departamentos};
+            var viewModel = new VendedorFormViewModel { Departamentos = departamentos };
             return View(viewModel);
         }
 
@@ -60,5 +60,22 @@ namespace ProjetoAspVendas.Controllers
             _vendedorService.Remove(id);
             return RedirectToAction(nameof(Index));
         }
+
+        public IActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var obj = _vendedorService.FindBybId(id.Value);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+
+            return View(obj);
+        }
+
     }
 }
