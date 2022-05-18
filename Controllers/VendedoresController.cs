@@ -1,9 +1,10 @@
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ProjetoAspVendas.Models;
 using ProjetoAspVendas.Models.ViewModels;
 using ProjetoAspVendas.Services;
-using ProjetoAspVendas.Services.Exceptions;
 
 namespace ProjetoAspVendas.Controllers
 {
@@ -43,13 +44,13 @@ namespace ProjetoAspVendas.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id não fornecido."});
             }
 
             var obj = _vendedorService.FindBybId(id.Value);
             if (obj == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id não encontrado."});
             }
 
             return View(obj);
@@ -67,13 +68,13 @@ namespace ProjetoAspVendas.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id não fornecido."});
             }
 
             var obj = _vendedorService.FindBybId(id.Value);
             if (obj == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id não encontrado."});
             }
 
             return View(obj);
@@ -83,13 +84,13 @@ namespace ProjetoAspVendas.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id não fornecido."});
             }
 
             var obj = _vendedorService.FindBybId(id.Value);
             if (obj == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id não encontrado."});
             }
 
             List<Departamento> departamentos = _departamentoService.FindAll();
@@ -104,7 +105,7 @@ namespace ProjetoAspVendas.Controllers
         {
             if (id != vendedor.Id)
             {
-                return BadRequest();
+                return RedirectToAction(nameof(Error), new { message = "Id não correspondem."});
             }
 
             try
@@ -112,15 +113,20 @@ namespace ProjetoAspVendas.Controllers
                 _vendedorService.Update(vendedor);
                 return RedirectToAction(nameof(Index));
             }
-            catch (NotFoundException)
+            catch (ApplicationException e)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = e.Message});
             }
-            catch (DbConcurrencyException)
-            {
-                return BadRequest();
-            }
+        }
 
+        public IActionResult Error(string message)
+        {
+            var viewModel = new ErrorViewModel
+            {
+                Message = message,
+                RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
+            };
+            return View(viewModel);
         }
     }
 }
