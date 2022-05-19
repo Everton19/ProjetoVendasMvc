@@ -11,21 +11,26 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
-            <div class="form-gropu">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
                 <label asp-for="Vendedor.Nome" class="control-label"></label>
                 <input asp-for="Vendedor.Nome" class="form-control">
+                <span asp-validation-for="Vendedor.Nome" class="text-danger"></span>
             </div>
-            <div class="form-gropu">
+            <div class="form-group">
                 <label asp-for="Vendedor.Email" class="control-label"></label>
                 <input asp-for="Vendedor.Email" class="form-control">
+                <span asp-validation-for="Vendedor.Email" class="text-danger"></span>
             </div>
-            <div class="form-gropu">
+            <div class="form-group">
                 <label asp-for="Vendedor.DataNascimento" class="control-label"></label>
                 <input asp-for="Vendedor.DataNascimento" class="form-control">
+                <span asp-validation-for="Vendedor.DataNascimento" class="text-danger"></span>
             </div>
-            <div class="form-gropu">
+            <div class="form-group">
                 <label asp-for="Vendedor.SalarioBase" class="control-label"></label>
                 <input asp-for="Vendedor.SalarioBase" class="form-control">
+                <span asp-validation-for="Vendedor.SalarioBase" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Vendedor.DepartamentoId" class="control-label"></label>
@@ -37,3 +42,7 @@
         </form>
     </div>
 </div>
+
+@section Scripts{
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

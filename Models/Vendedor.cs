@@ -8,15 +8,23 @@ namespace ProjetoAspVendas.Models
     public class Vendedor
     {
         public int Id { get; set; }
+
+        [Required(ErrorMessage = "Requer {0}")]
+        [StringLength(60, MinimumLength = 3, ErrorMessage = "O padrão de nome deve estar entre 3 e 60 caracteres")]
         public string Nome { get; set; }
 
+        [Required(ErrorMessage = "Requer {0}")]
         [DataType(DataType.EmailAddress)]
+        [EmailAddress(ErrorMessage = "Coloque um email válido")]
         public string Email { get; set; }
 
+        [Required(ErrorMessage = "Requer {0}")]
+        [Range(100.0, 50000.0, ErrorMessage = "{0} deve ser entre {1} e {2}")]
         [Display(Name = "Salário Base")]
         [DisplayFormat(DataFormatString = "{0:F2}")]
         public double SalarioBase { get; set; }
 
+        [Required(ErrorMessage = "Requer {0}")]
         [Display(Name = "Data de Nascimento")]
         [DataType(DataType.Date)]
         public DateTime DataNascimento { get; set; }
