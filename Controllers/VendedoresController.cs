@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using ProjetoAspVendas.Models;
 using ProjetoAspVendas.Models.ViewModels;
 using ProjetoAspVendas.Services;
+using ProjetosAspVendas.Services.Exceptions;
 
 namespace ProjetoAspVendas.Controllers
 {
@@ -40,8 +41,8 @@ namespace ProjetoAspVendas.Controllers
         {
             if (!ModelState.IsValid)
             {
-                var departamentos =  await _departamentoService.FindAllAsync();
-                var viewModel = new VendedorFormViewModel { Vendedor = vendedor, Departamentos = departamentos};
+                var departamentos = await _departamentoService.FindAllAsync();
+                var viewModel = new VendedorFormViewModel { Vendedor = vendedor, Departamentos = departamentos };
                 return View(viewModel);
             }
 
@@ -52,13 +53,13 @@ namespace ProjetoAspVendas.Controllers
         {
             if (id == null)
             {
-                return RedirectToAction(nameof(Error), new { message = "Id não fornecido."});
+                return RedirectToAction(nameof(Error), new { message = "Id não fornecido." });
             }
 
             var obj = await _vendedorService.FindBybIdAsync(id.Value);
             if (obj == null)
             {
-                return RedirectToAction(nameof(Error), new { message = "Id não encontrado."});
+                return RedirectToAction(nameof(Error), new { message = "Id não encontrado." });
             }
 
             return View(obj);
@@ -68,21 +69,28 @@ namespace ProjetoAspVendas.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
         {
-            await _vendedorService.RemoveAsync(id);
-            return RedirectToAction(nameof(Index));
+            try
+            {
+                await _vendedorService.RemoveAsync(id);
+                return RedirectToAction(nameof(Index));
+            }
+            catch (IntegrityException e)
+            {
+                return RedirectToAction(nameof(Error), new { message = e.Message });
+            }
         }
 
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
-                return RedirectToAction(nameof(Error), new { message = "Id não fornecido."});
+                return RedirectToAction(nameof(Error), new { message = "Id não fornecido." });
             }
 
             var obj = await _vendedorService.FindBybIdAsync(id.Value);
             if (obj == null)
             {
-                return RedirectToAction(nameof(Error), new { message = "Id não encontrado."});
+                return RedirectToAction(nameof(Error), new { message = "Id não encontrado." });
             }
 
             return View(obj);
@@ -92,13 +100,13 @@ namespace ProjetoAspVendas.Controllers
         {
             if (id == null)
             {
-                return RedirectToAction(nameof(Error), new { message = "Id não fornecido."});
+                return RedirectToAction(nameof(Error), new { message = "Id não fornecido." });
             }
 
             var obj = await _vendedorService.FindBybIdAsync(id.Value);
             if (obj == null)
             {
-                return RedirectToAction(nameof(Error), new { message = "Id não encontrado."});
+                return RedirectToAction(nameof(Error), new { message = "Id não encontrado." });
             }
 
             List<Departamento> departamentos = await _departamentoService.FindAllAsync();
@@ -114,13 +122,13 @@ namespace ProjetoAspVendas.Controllers
             if (!ModelState.IsValid)
             {
                 var departamentos = await _departamentoService.FindAllAsync();
-                var viewModel = new VendedorFormViewModel { Vendedor = vendedor, Departamentos = departamentos};
+                var viewModel = new VendedorFormViewModel { Vendedor = vendedor, Departamentos = departamentos };
                 return View(viewModel);
             }
 
             if (id != vendedor.Id)
             {
-                return RedirectToAction(nameof(Error), new { message = "Id não correspondem."});
+                return RedirectToAction(nameof(Error), new { message = "Id não correspondem." });
             }
             try
             {
@@ -129,7 +137,7 @@ namespace ProjetoAspVendas.Controllers
             }
             catch (ApplicationException e)
             {
-                return RedirectToAction(nameof(Error), new { message = e.Message});
+                return RedirectToAction(nameof(Error), new { message = e.Message });
             }
         }
 
