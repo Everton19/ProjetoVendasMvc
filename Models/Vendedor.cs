@@ -9,24 +9,25 @@ namespace ProjetoAspVendas.Models
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Requer {0}")]
-        [StringLength(60, MinimumLength = 3, ErrorMessage = "O padrão de nome deve estar entre 3 e 60 caracteres")]
+        [Required(ErrorMessage = "{0} Requerido")]
+        [StringLength(60, MinimumLength = 3, ErrorMessage = "O padrão de {0} deve estar entre {2} e {1} caracteres")]
         public string Nome { get; set; }
 
-        [Required(ErrorMessage = "Requer {0}")]
-        [DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "{0} Requerido")]
         [EmailAddress(ErrorMessage = "Coloque um email válido")]
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Requer {0}")]
+        [Required(ErrorMessage = "{0} Requerido")]
         [Range(100.0, 50000.0, ErrorMessage = "{0} deve ser entre {1} e {2}")]
         [Display(Name = "Salário Base")]
         [DisplayFormat(DataFormatString = "{0:F2}")]
         public double SalarioBase { get; set; }
 
-        [Required(ErrorMessage = "Requer {0}")]
+        [Required(ErrorMessage = "{0} Requerido")]
         [Display(Name = "Data de Nascimento")]
         [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString ="{0:dd/MM/yyyy}")]
         public DateTime DataNascimento { get; set; }
         public Departamento Departamento { get; set; }
         public int DepartamentoId { get; set; }
