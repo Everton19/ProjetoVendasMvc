@@ -44,3 +44,6 @@ C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspV
 C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\Razor\Views\Vendedores\Delete.cshtml.g.cs
 C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\Razor\Views\Vendedores\Details.cshtml.g.cs
 C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\Razor\Views\Vendedores\Edit.cshtml.g.cs
+C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\Razor\Views\RegistrosVendas\BuscaEmGrupo.cshtml.g.cs
+C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\Razor\Views\RegistrosVendas\BuscaSimples.cshtml.g.cs
+C:\Users\evert.LAPTOP-4LMMS3NB.001\Desktop\Programação\C#\AspNelio\ProjetoAspVendas\obj\Debug\netcoreapp2.1\Razor\Views\RegistrosVendas\Index.cshtml.g.cs

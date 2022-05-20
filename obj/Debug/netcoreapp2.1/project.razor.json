@@ -1838,6 +1838,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\RegistrosVendas\\Index.cshtml",
+      "TargetPath": "Views\\RegistrosVendas\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Vendedores\\Details.cshtml",
       "TargetPath": "Views\\Vendedores\\Details.cshtml",
       "FileKind": "mvc"
@@ -1850,6 +1855,11 @@
     {
       "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\RegistrosVendas\\BuscaSimples.cshtml",
+      "TargetPath": "Views\\RegistrosVendas\\BuscaSimples.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -1915,6 +1925,11 @@
     {
       "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\Departamentos\\Details.cshtml",
       "TargetPath": "Views\\Departamentos\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\evert.LAPTOP-4LMMS3NB.001\\Desktop\\Programação\\C#\\AspNelio\\ProjetoAspVendas\\Views\\RegistrosVendas\\BuscaEmGrupo.cshtml",
+      "TargetPath": "Views\\RegistrosVendas\\BuscaEmGrupo.cshtml",
       "FileKind": "mvc"
     }
   ],
