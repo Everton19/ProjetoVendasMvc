@@ -24,7 +24,7 @@ namespace ProjetoAspVendas.Data
             }
 
             Departamento d1 = new Departamento(1, "Computadores");
-            Departamento d2 = new Departamento(2, "Electronicos");
+            Departamento d2 = new Departamento(2, "Eletrônicos");
             Departamento d3 = new Departamento(3, "Moda");
             Departamento d4 = new Departamento(4, "Livros");
 

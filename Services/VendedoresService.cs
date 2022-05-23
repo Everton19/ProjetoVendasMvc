@@ -43,7 +43,7 @@ namespace ProjetoAspVendas.Services
             }
             catch (DbUpdateException e)
             {
-                throw new IntegrityException("Não é possível deletar o vendedor porque ele/ela contém vendas.");
+                throw new IntegrityException("Não é possível deletar este vendedor porque ele/ela contém vendas.");
             }
         }
 

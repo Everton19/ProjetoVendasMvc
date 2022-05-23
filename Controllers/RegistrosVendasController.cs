@@ -36,9 +36,20 @@ namespace ProjetoAspVendas.Controllers
             return View(resultado);
         }
 
-        public IActionResult BuscaEmGrupo()
+        public async Task<IActionResult> BuscaEmGrupo(DateTime? dataMin, DateTime? dataMax)
         {
-            return View();
+            if (!dataMin.HasValue)
+            {
+                dataMin = new DateTime(DateTime.Now.Year, 1, 1);
+            }
+            if (!dataMax.HasValue)
+            {
+                dataMax = DateTime.Now;
+            }
+            ViewData["dataMin"] = dataMin.Value.ToString("dd/MM/yyyy");
+            ViewData["dataMax"] = dataMax.Value.ToString("dd/MM/yyyy");
+            var resultado = await _registroVendasService.EncontrarUmaDataEmGrupoAsync(dataMin, dataMax);
+            return View(resultado);
         }
     }
 }
