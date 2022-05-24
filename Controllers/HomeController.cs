@@ -17,7 +17,7 @@ namespace ProjetoAspVendas.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "A página de descrição sobre meu aplicativo.";
             ViewData["email"] = "evertontp5@gmail.com";
 
             return View();
@@ -25,7 +25,7 @@ namespace ProjetoAspVendas.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Minha página de contato.";
 
             return View();
         }

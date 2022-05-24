@@ -1,7 +1,7 @@
 @model ProjetoAspVendas.Models.ViewModels.VendedorFormViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Criar";
 }
 
 <h2>@ViewData["Title"]</h2>
@@ -37,7 +37,7 @@
                 <select asp-for="Vendedor.DepartamentoId" asp-items="@(new SelectList(Model.Departamentos, "Id","Nome"))" class="form-control"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Criar" class="btn btn-default" />
             </div>
         </form>
     </div>
